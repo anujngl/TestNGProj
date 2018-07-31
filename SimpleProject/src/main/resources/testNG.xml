@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Suite1" verbose="1" parallel="tests">
+  <listeners>
+    <listener class-name="listeners.SuiteListener" />
+  </listeners>
+  
+  <test name="Mock Test 2" >
+  	<parameter name="browser" value="chrome"/>
+  	<parameter name="testId" value="TEST01"/>
+  	<parameter name="testName" value="Launch Cyclos and Perform a Payment to system"/>  
+  	<parameter name="qctestfolder" value="Cyclos_Demo_1"/>
+  	<parameter name="qctestid" value="150"/>		
+    <classes>
+       <class name="tests.Test01" />
+  </classes>
+  </test>
+</suite>

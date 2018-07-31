@@ -1,0 +1,12 @@
+CYC_TC_001,Passed,App - https://demo.cyclos.org is launched
+CYC_TC_002,Passed,Signin button is clicked
+CYC_TC_003,Passed,Username is entered
+CYC_TC_004,Passed,Password is entered
+CYC_TC_005,Passed,Login button is clicked
+CYC_TC_006,Passed,Banking Menu is clicked
+CYC_TC_007,Passed,Payment to System tab is clicked
+CYC_TC_008,Passed,Amount 10.0 is entered
+CYC_TC_009,Passed,Description To transfer amount to merchant is entered
+CYC_TC_010,Passed,Submit button is clicked
+CYC_TC_011,Passed,Confirm button is clicked
+CYC_TC_012,Passed,logout button is clicked
