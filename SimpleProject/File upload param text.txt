@@ -1,0 +1,5 @@
+var fileName = "C:\\Multiverse_Agent\\root\\AutomationCode\\test.txt";   //  passed as a command line parameter to AutoIT executable below
+var autoITExecutable = "fileuploadparam.exe " + fileName;
+
+var { exec } = require("child_process");
+exec(autoITExecutable);
