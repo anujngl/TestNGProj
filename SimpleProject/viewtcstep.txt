@@ -1,0 +1,32 @@
+id=hello
+
+
+<div class="modal-body">
+                                         <img ng-if="currtestsuitetc.mode=='AQuA' && currtestsuitetc.bots[botindex].botbrowser != 'chrome_emulator'" style="display: block; margin: 0 auto;width:100%;height: 80%" ng-src="{{screenshot}}">
+                                         <img ng-if="currtestsuitetc.mode!='AQuA'|| currtestsuitetc.bots[botindex].botbrowser== 'chrome_emulator'" style="display: block; margin: 0 auto;width:35%;height: 85%" ng-src="{{screenshot}}">
+
+                                        <div style="display: block;
+        margin: 0 auto;width:100%;height: 80%" ng-if="fetchss"><i style="margin-top: 20%;margin-left: 47%"
+                                                class="fa fa-spinner fa-pulse fa-4x fa-fw"></i></div>
+                                    </div>
+
+testexec.js
+
+$rootScope.docarr = [{ "type": "exebot","programid":$scope.currtestsuitetc.programid,"projectid":$scope.currtestsuitetc.projectid,
+                                           "testsuitid":$scope.currtestsuitetc.id, "stpdata": [], "botname": $scope.currbot,'mode':$scope.currtestsuitetc.mode,
+                                           "botbrowser": $scope.currtestsuitetc.bots[bot_ind-1].botbrowser,
+                                           "insname": $scope.currtestsuitetc.name,"bot_ind":bot_ind ,"noofsteps":$scope.currtestsuitetc.bots[bot_ind-1].noofsteps}]
+
+tramdoc.js
+console.log("datafromclientdatafromclientdatafromclient",datafromclient)
+
+        const imageOpts = {
+            getImage(tag) {
+                return base64DataURLToArrayBuffer(tag);
+            },
+            getSize() {
+                return datafromclient.length>0 ? datafromclient[0].mode == 'AQuA' ? 
+                       datafromclient[0].botbrowser=='chrome_emulator' ?[350,650] : [650, 350] : [350,650] : [650, 350] ;
+
+            },
+        };
